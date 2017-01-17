@@ -1,0 +1,30 @@
+.shirt-container {
+  display: inline-block;
+  overflow: hidden;
+  margin: 12px auto;
+  padding: 5px;
+  width: calc(25% - 12px);
+}
+
+img {
+  background: #fff;
+  border: 2px solid #74bdea;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.shirt-menu {
+  border: 2px solid #74bdea;
+  overflow: hidden;
+  width: 100%;
+}
+
+.icon-holder {
+  background: white;
+  border: 2px solid #74bdea;
+  color: #74bdea;
+  float: left;
+  width: 20%;
+}
