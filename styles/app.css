@@ -3,6 +3,7 @@
   overflow: hidden;
   margin: 12px auto;
   padding: 5px;
+  /*visibility: hidden;*/
   width: calc(25% - 12px);
 }
 
@@ -11,7 +12,7 @@ img {
   border: 2px solid #74bdea;
   float: left;
   margin: 0;
-  padding: 0;
+  padding: 2%;
   width: 100%;
 }
 
@@ -26,5 +27,18 @@ img {
   border: 2px solid #74bdea;
   color: #74bdea;
   float: left;
+  height: auto;
+  padding: 4%;
   width: 20%;
+}
+
+i {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.icon-holder:hover {
+  background-color: #74bdea;
+  color: #fff;
 }
