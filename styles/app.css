@@ -143,12 +143,36 @@ i {
   background-color: #dfdfdf;
 }
 
-@media screen and (max-width: 700px) {
+button {
+  background-color: #74bdea;
+  color: #fff;
+  font-weight: bold;
+  min-height: 40px;
+  padding: 5px;
+  width: 100%;
+}
+
+button:active {
+  background-color: #fff;
+  color: #74bdea;
+}
+
+
+
+@media screen and (max-width: 550px) {
+  body {
+    padding-left: 75px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    padding-left: 15px;
+  }
   .shirt-container {
-    display: inline-block;
     overflow: hidden;
     margin: 12px auto auto;
-    min-width: 300px;
+    min-width: 200px;
     padding: 5px;
     position: relative;
     /*visibility: hidden;*/
@@ -159,15 +183,6 @@ i {
     border: 2px solid #74bdea;
     display: block;
     text-align: center;
-    width: 100%;
-  }
-
-  button {
-    background-color: #74bdea;
-    color: #fff;
-    font-weight: bold;
-    min-height: 40px;
-    padding: 5px;
     width: 100%;
   }
 
@@ -200,7 +215,7 @@ i {
     display: inline-block;
     overflow: hidden;
     margin: 12px auto auto;
-    min-width: 300px;
+    min-width: 250px;
     padding: 5px;
     position: relative;
     /*visibility: hidden;*/
