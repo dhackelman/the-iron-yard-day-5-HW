@@ -1,3 +1,7 @@
+body {
+  padding-left: 25px;
+}
+
 .shirt-container {
   display: inline-block;
   overflow: hidden;
@@ -28,6 +32,9 @@ img {
   width: 100%;
 }
 
+.collapsed-menu {
+  display: none;
+}
 
 .shirt-flip {
   border: 2px solid #74bdea;
@@ -134,4 +141,101 @@ i {
 
 #blue:hover, #orange:hover, #pink:hover, #green:hover {
   background-color: #dfdfdf;
+}
+
+@media screen and (max-width: 700px) {
+  .shirt-container {
+    display: inline-block;
+    overflow: hidden;
+    margin: 12px auto auto;
+    min-width: 300px;
+    padding: 5px;
+    position: relative;
+    /*visibility: hidden;*/
+    width: calc(40% - 12px);
+  }
+
+  .collapsed-menu {
+    border: 2px solid #74bdea;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  button {
+    background-color: #74bdea;
+    color: #fff;
+    font-weight: bold;
+    min-height: 40px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .legit-menu {
+    display: none;
+  }
+
+  .dropdown-content {
+      background-color: #fff;
+      border: 2px solid #74bdea;
+      display: none;
+      height: auto;
+      position: absolute; left: -6%; top:-375%; z-index:999;
+      width: 110%;
+  }
+
+  .shirt-flip {
+    background: #fff;
+    border: 2px solid #74bdea;
+    color: #74bdea;
+    padding: 5%;
+    position: absolute; left: 81%; top: 1.5%;
+    width: 17%;
+  }
+}
+
+/*min-width of shirt-container + margin x 3*/
+@media screen and (min-width: 980px) {
+  .shirt-container {
+    display: inline-block;
+    overflow: hidden;
+    margin: 12px auto auto;
+    min-width: 300px;
+    padding: 5px;
+    position: relative;
+    /*visibility: hidden;*/
+    width: calc(30% - 12px);
+  }
+
+  .dropdown-content {
+      background-color: #fff;
+      border: 2px solid #74bdea;
+      display: none;
+      height: auto;
+      position: absolute; left: -8%; top:-400%; z-index:999;
+      width: 110%;
+  }
+
+  .collapsed-menu {
+    display: none;
+  }
+
+  .legit-menu {
+    display:  inline;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  .shirt-container {
+    display: inline-block;
+    overflow: hidden;
+    margin: 12px auto auto;
+    min-width: 300px;
+    padding: 5px;
+    position: relative;
+    /*visibility: hidden;*/
+    width: calc(25% - 12px);
+  }
 }
